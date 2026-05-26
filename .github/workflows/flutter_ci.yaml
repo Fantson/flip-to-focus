@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - develop
-      - "**" # any branch
+      - devops
   pull_request:
 
 env:
