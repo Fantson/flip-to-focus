@@ -21,6 +21,13 @@ pkgs.mkShell {
     python312
     python312Packages.venvShellHook
 
+    (python312.withPackages (
+      pkgs: with pkgs; [
+        ruff
+        black
+      ]
+    ))
+
     # Native deps
     pkg-config
     openssl
